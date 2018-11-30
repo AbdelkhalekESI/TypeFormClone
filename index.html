@@ -28,7 +28,7 @@
        
         <div class="row not-typed">
             <div class="col-12">
-                <img class="logo-img" src="{{asset('images/LOGO.png')}}" alt="CSE">
+                <img class="logo-img" src="images/LOGO.png" alt="CSE">
             </div>
         </div>
        
@@ -50,7 +50,7 @@
                 </div>
             </div>
             <form id="register" method="POST">
-                @csrf
+               
                 <div class="formi col-lg-12">
                     <label class="labeli" for="first_name">What's your first name ?</label>
                     <input type="text" class="inputi" id="first_name" name="first_name" placeholder="Your name here">
@@ -187,9 +187,8 @@
 <script src="js/bootstrap/bootstrap.min.js"></script>
 <script src="datepicker/dist/js/datepicker.min.js"></script>
 <script src="datepicker/dist/js/i18n/datepicker.en.js"></script>
-<script src="js/register.js')}}"></script>
+<script src="js/register.js"></script>
 <script type="text/javascript">
-    const token = '{{csrf_token()}}';
         $(document).ready(function () {
             $('#registrationDone').hide();
             $('#createJoin').addClass('hidi');
